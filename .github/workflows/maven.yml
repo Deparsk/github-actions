@@ -38,6 +38,6 @@ jobs:
         registry: docker.io
         dockerfile: Dockerfile
         username: ${{ secrets.DOCKER_USERNAME}}
-        password: &{{secrets.Docker_PASSWORD}}
+        password: ${{secrets.Docker_PASSWORD}}
 
 
