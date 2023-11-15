@@ -48,7 +48,7 @@ on:
 # push:
 #   branches:
 #      - "main"
-      work_dispatch:
+      workflow_dispatch:
 
 env:
   PROJECT_ID: karrigo-gcp # TODO: update Google Cloud project id
