@@ -40,8 +40,17 @@
 					</image>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>com.google.cloud.tools</groupId>
+				<artifactId>appengine-maven-plugin</artifactId>
+				<version>2.2.0</version>
+				<configuration>
+					<version>1</version>
+					<projectId>karrigo-gcp</projectId>
+				</configuration>
+			</plugin>
 		</plugins>
-		<finalName>cicd-github-actions</finalName>
+		<finalName>cicd-github</finalName>
 	</build>
 
 </project>

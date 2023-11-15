@@ -1,4 +1,7 @@
-FROM openjdk:8
+FROM openjdk:17
+
+COPY target/cicd-github.jar .
+
 EXPOSE 8080
-ADD target/cicd-github-actions cicd-github-actions.jar
-ENTRYPOINT ["java", "-jar", "/cicd-github-actions.jar"]
+
+ENTRYPOINT ["java", "-jar", "cicd-github.jar"]
